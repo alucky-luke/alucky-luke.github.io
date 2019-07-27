@@ -83,9 +83,6 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
 <link rel="manifest" href="/assets/manifest.json">
 
 
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-
 
 
 
@@ -112,13 +109,6 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
     w._noDrawer = true;
 
     /**/
-    loadJS(d.getElementById('_hrefFFO').href, function() {
-      if ('Promise' in w) Promise.all([
-        new FontFaceObserver('Garamond').load(),
-        new FontFaceObserver('Garamond').load(),
-      ]).then(function f() { d.body.classList.add('font-active'); }, function() {});
-    });
-    /**/
 }(window, document);</script>
 
 <!--[if gt IE 8]><!---->
@@ -132,14 +122,6 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
 
   <link rel="stylesheet" href="/assets/css/hydejack-8.4.0.css">
   <link rel="stylesheet" href="/assets/icomoon/style.css">
-  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Noto+Sans:400,400i,700,700i">
-    <noscript>
-      <style>
-        html { font-family: Garamond, Noto Sans, Helvetica, Arial, sans-serif!important; }
-        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: Garamond, Roboto Slab, Helvetica, Arial, sans-serif!important; }
-      </style>
-    </noscript>
   
 
 
@@ -240,7 +222,7 @@ principal components analysis.</li>
 
 <h2 id="color-scheme-for-presentations-etc">Color scheme for presentations etc.</h2>
 
-<p><img src="/assets/img/colors.png" alt="colors" /></p>
+<p><img src="/assets/img/colors.png" alt="colors" class="lead" data-width="800" /></p>
 
 </article>
 
