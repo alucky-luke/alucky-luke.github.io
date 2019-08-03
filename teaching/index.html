@@ -200,17 +200,7 @@ demographics.</p>
 
 <h3 id="s352---intro-to-statistical-modeling-sp20">S352 - Intro to Statistical Modeling (Sp20)</h3>
 
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## preallocate a space to store the interval widths</span><span class="w">
-</span><span class="n">avg.widths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">double</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">cors</span><span class="p">))</span><span class="w"> 
-</span><span class="c1">## write a loop to calculate the average CI width for each value of cors</span><span class="w">
-</span><span class="c1"># for(i in 1:length(cors)) avg.widths[i] = intervals(n, cors[i])</span><span class="w">
-</span><span class="n">avg.widths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sapply</span><span class="p">(</span><span class="n">cors</span><span class="p">,</span><span class="w"> </span><span class="n">intervals</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="c1"># alternatively</span><span class="w">
-</span><span class="c1">## plot cors (x-axis) vs. average widths (y-axis)</span><span class="w">
-</span><span class="n">dat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">correlation</span><span class="o">=</span><span class="n">cors</span><span class="p">,</span><span class="w"> </span><span class="n">avg.widths</span><span class="o">=</span><span class="n">avg.widths</span><span class="p">)</span><span class="w">
-</span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
-</span><span class="n">ggplot</span><span class="p">(</span><span class="n">dat</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">correlation</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">avg.widths</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_path</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
-    </span><span class="n">scale_y_log10</span><span class="p">()</span><span class="w">
-</span></code></pre></div></div>
+<p><img src="/assets/img/code.png" alt="" class="lead" data-width="800" /></p>
 
 <p><img src="/assets/img/ci-widths.jpg" alt="" class="lead" data-width="800" /></p>
 
@@ -366,6 +356,18 @@ course on statistical learning. I retaught the course in New York February 24-26
       <li>
         <a
           id="_navigation"
+          href="/"
+          class="sidebar-nav-item active"
+          
+        >
+          Biography
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
           href="/publications/"
           class="sidebar-nav-item"
           
