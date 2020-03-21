@@ -4,7 +4,7 @@
   "short_name": "Daniel J. McDonald",
   "description": "Associate Professor of Statistics",
   "start_url": "/?utm_source=homescreen",
-  "theme_color": "rgb(5,59,100)",
+  "theme_color": "rgb(4,30,66)",
   "background_color": "#fff",
   "orientation": "portrait",
   "display": "standalone",
