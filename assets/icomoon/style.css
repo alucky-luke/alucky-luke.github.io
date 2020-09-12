@@ -235,7 +235,7 @@
   content: "\ead8";
 }
 .icon-mail:before {
-  content: "\e900";
+  content: "\ea83";
 }
 .icon-rss2:before {
   content: "\ea9c";
@@ -281,4 +281,7 @@
 }
 .icon-key:before {
   content: "\e98d";
+}
+.icon-at:before {
+  content: "\e900";
 }
