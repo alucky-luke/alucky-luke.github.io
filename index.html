@@ -151,10 +151,28 @@ Powered by Hydejack v8.5.1 <https://hydejack.com/>
   script-selector="script:not([type^='math/tex'])"
   prefetch
 >
+ 
+ body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
   
     <main
   id="_main"
-  class="content fade-in layout-page" style="background-color:rgb(255,255,255);background-image:url(/background.jpg)"
+  class="content fade-in layout-page"
   role="main"
   data-color="rgb(4,30,66)"
   data-theme-color="rgb(0,0,0)"
